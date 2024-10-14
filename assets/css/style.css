@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+.my-t {
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+
+.header h1 {
+    color: #ff6347 ;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 35px;
+    text-transform: capitalize;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+
+}
+.hero-container h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #333;
+
+}
+
+.hero-container p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #666;
+}
+.hero-container {
+        flex: 1;
+        width: 600px;
+        margin: 0px 25px;
+        animation: fadeInUp 2s ease;
+}
+
+.hero-container button{
+    display: inline-block;
+    background-color: darkorchid;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+
+}
+
+.hero-container button:hover{
+    background-color: purple ;
+    transform: scale(1.1);
+
+}
+.hero-image {
+        flex: 1;
+        width: 600px;
+        margin: auto;
+        animation: fadeInUp 2s ease;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+@media screen and (max-width: 768px){
+            .header h1{
+                font-size: 45px;
+                margin-top: 30px;
+            }
+            .header{
+                margin: 0px;
+
+            }
+            .container{
+                width: 100%;
+                flex-direction: column;
+                margin: 0px;
+                padding: 0px 40px;
+            }
+            .hero-container{
+                width: 100%;
+                margin: 35px 0px;
+            }
+           
+            .hero-container p{
+                font-size: 18px;
+                margin-bottom: 20px;
+
+            }
+            .hero-container button{
+                font-size: 16px;
+                padding: 8px 16px;  
+            }
+            .hero-image{
+                width: 100%;
+            }
+}
